@@ -1,0 +1,184 @@
+/* Overall form styling */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1621468635836-494461c17b64?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW4lMjBuYXR1cmFsfGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* Box around the form */
+.box {
+    padding: 30px;
+    border: 1px solid #2d8b10;
+    width: 330px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(0.98);
+    animation: scaleUp 0.5s ease-out forwards;
+}
+
+/* Header */
+h3 {
+    color: #2d8b10;
+    font-family: "Raleway", sans-serif;
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeInText 2s ease-in-out;
+}
+
+/* Styling for form control (inputs) */
+.form-control {
+    border: 2px solid #2d8b10;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2d8b10;
+    outline: none;
+    box-shadow: 0 0 10px rgba(26, 115, 232, 0.6);
+}
+
+/* Styling for the registration and login links */
+.regi-logi {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 12px;
+    color: #8d8f92;
+    margin-top: 15px;
+    animation: fadeInText 2s ease-in-out;
+    /* background-color: #8d8f92; */
+}
+
+.regi-logi a {
+    color: #2d8b10;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.regi-logi a:hover {
+    color: #1a73e8;
+}
+
+/* Button Styling */
+.d-grid {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00aaff, #1a73e8);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1a73e8, #00aaff);
+    transform: scale(1.05);
+}
+
+/* Google Sign In Section */
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.logo-border {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 180px;
+}
+
+.logo-border:hover {
+    border-color: #00aaff;
+    transform: scale(1.05);
+}
+
+/* password input 1*/
+
+#inputz {
+    height: 45px;
+    /* width: 30%; */
+    font-size: 18px;
+}
+
+.labbel {
+    position: absolute;
+    padding-top: 26px;
+    top: 37.5%;
+    right: 15%;
+}
+
+/* password input 1*/
+
+#inputz2 {
+    height: 45px;
+    font-size: 18px;
+    padding-right: 40px; /* Add space for the eye icon inside the input */
+    position: relative; /* Needed for better positioning with labbel2 */
+}
+
+.labbel2 {
+    position: absolute;
+    top: 64.8%; /* Vertically center the icon relative to the input */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    right: 45px; /* Position the icon closer to the right edge of the input */
+    cursor: pointer;
+}
+
+
+/* Animation for scaling and fading */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.98);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-text {
+    color: red;
+    font-size: 0.9em;
+}
